@@ -93,6 +93,6 @@ app.get('*', (req, res) => {
 });
 
 // Listen on port 5000
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
