@@ -89,7 +89,7 @@ app.get('/api/search/:query', (req, res) => {
 app.use(express.static('film-search-frontend/build'));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'film-search-frontend', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'film-search-frontend', 'public', 'index.html'));
 });
 
 // Listen on port 5000
