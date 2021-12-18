@@ -1,8 +1,8 @@
 function Loading() {
   return (
-    // TODO: Style loading screen
-    <main className="bg-gray-600 h-screen">
-      <h2>Loading...</h2>
+    <main className="bg-gray-600 h-screen p-6">
+      <div className="custom-loader mx-auto pt-4"></div>
+      <h2 className="font-bold text-center text-2xl text-green-600">Loading...</h2>
     </main>
   )
 }
